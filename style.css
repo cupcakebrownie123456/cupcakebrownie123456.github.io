@@ -1,0 +1,110 @@
+: html {
+  box-sizing: border-box;
+
+}
+
+h1 {
+  color: purple;
+  font-family: 'Open-Sans', sans-serif;
+  font-size: 2.5em;
+  margin: 10px;
+
+}
+
+body {
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 1em;
+  box-sizing: border-box;
+  width: 90%;
+  margin: 3rem auto;
+  padding: 2.5rem 0;
+  padding-top: 10px;
+}
+
+.one {
+  width: 33%;
+  float: left;
+}
+
+.two {
+  width: 33%;
+  float: left;
+}
+
+.three {
+  width: 33%;
+  float: left;
+}
+
+nav li {
+  display: inline-block;
+  margin-right: 1em;
+}
+
+section {
+  margin-top: 1.5em;
+}
+
+.emoji-falling {
+  position: absolute;
+  animation: falling 6s infinite linear;
+}
+
+.emoji-falling:nth-of-type(1) {
+  bottom: 1200px;
+  left: 30%;
+}
+.emoji-falling:nth-of-type(2) {
+  bottom: 500px;
+  left: 45%;
+}
+
+.emoji-falling:nth-of-type(3) {
+  bottom: 1000px;
+  left: 60%;
+}
+
+.emoji-falling:nth-of-type(4) {
+  bottom: 475px;
+  left: 57%;
+}
+
+.emoji-falling:nth-of-type(5) {
+  bottom: 600px;
+  left: 70%;
+}
+
+.emoji-falling:nth-of-type(6) {
+  bottom: 1200px;
+  left: 60%;
+}
+
+@keyframes falling {
+  0% {
+    transform: rotate(360deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  100% {
+    bottom: -25px;
+    transform: rotate(-360deg);
+  }
+}
+
+.profile-pic {
+    float: left;
+   margin-left: 20px;
+   width: 7%;
+   height: 7%;
+   border-radius: 50%;
+   margin-right: 20px;
+}
+
+p {
+  padding: 10px;
+}
+
+.aboutme {
+  background: url(images/toronto.jpg);
+}
